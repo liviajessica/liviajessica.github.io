@@ -1,4 +1,4 @@
 
 <a href="http://liviajessica.github.io">Demo</a>
 
-Take Home Challenge
+Take Home Challenge - Responsive Website
