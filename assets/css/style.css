@@ -1,0 +1,342 @@
+/* ===GLOBAL=== */
+:root {
+    --pinky: #eebece;
+    --pinky-50: #f983ab;
+    --black: #000000;
+    --rich-blue: #0b24fb;
+    --white: #ffffff;
+}
+
+@font-face {
+    font-family: WorkSans;
+    src: url(/assets/font/WorkSans-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: WorkSans-Black;
+    src: url(/assets/font/WorkSans-Black.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: WorkSans-SemiBoldItalic;
+    src: url(/assets/font/WorkSans-SemiBoldItalic.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: WorkSans-Bold;
+    src: url(/assets/font/WorkSans-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: WorkSans-Medium;
+    src: url(/assets/font/WorkSans-Medium.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: WorkSans-Light;
+    src: url(/assets/font/WorkSans-Light.ttf) format("truetype");
+}
+
+html {
+    font-family: WorkSans;
+    scroll-behavior: smooth;
+}
+
+/* ===END GLOBAL=== */
+
+/* ===BACKGROUND=== */
+#bg-wfh {
+    background: var(--pinky) url("images/bg-1.png") no-repeat center center/auto;
+    height: 732px;
+    object-fit: contain;
+}
+
+#bg-deffinition {
+    background: url("images/group-4.png") no-repeat right top, var(--pinky) repeat left bottom/auto;
+}
+
+#bg-testimonials {
+    /* background: -webkit-linear-gradient(180deg, var(--pinky) 60%, var(--black) 60%), url("images/oval.png");
+    background: -o-linear-gradient(180deg, var(--pinky) 60%, var(--black) 60%), url("images/oval.png");
+    background: -moz-linear-gradient(180deg, var(--pinky) 60%, var(--black) 60%), url("images/oval.png"); */
+    background: url("images/oval.png") no-repeat 20% top, linear-gradient(180deg, var(--pinky) 60%, var(--black) 60%);
+    /* background-repeat: no-repeat;
+    background-position: 0%, 10% 90%; */
+}
+
+#bg-black {
+    background-color: var(--black);
+}
+
+#bg-help-tips {
+    background: url("images/path-3.png") no-repeat 90% 10%, var(--black) repeat left bottom/auto;
+}
+
+#bg-you-set {
+    background: url("images/Group-3.png") no-repeat left bottom, var(--black) repeat right top/auto;
+    padding-bottom: 100px;
+}
+
+/* ===END BACKGROUND=== */
+
+/* ===FONT=== */
+/* WEEKEND FROM HOME -- Section 1 */
+.Font-62-center {
+    font: 62px/0.82 WorkSans-Black;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--white);
+}
+
+/* Stay active with a little workout. -- Section 1 */
+.Font-21-center {
+    font: 21px/normal WorkSans-SemiBoldItalic;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--white);
+}
+
+/* Button Let's Go -- Section 1 */
+.Font-16-center {
+    font: 16px/normal WorkSans;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--black);
+}
+
+/* ...a practice or exercise to test... -- Section 2 */
+.Font-21-right-black {
+    font: 21px/1.52 WorkSans-Medium;
+    padding: 152px 25% 0;
+    letter-spacing: -0.75px;
+    text-align: right;
+    color: var(--black);
+}
+
+/* Deffinition -- Section 2 */
+.Font-21-right-black .text-style-1 {
+    font-family: WorkSans-Bold;
+    color: var(--rich-blue);
+}
+
+/* -weekend team -- Section 2 */
+.Font-21-right-white {
+    font: 21px/normal WorkSans-SemiBoldItalic;
+    padding: 0 25% 84px 0;
+    letter-spacing: normal;
+    text-align: right;
+    color: var(--white);
+}
+
+/* Testimonials -- Section 3 */
+/* POV -- Section 4 */
+/* Resource -- Section 5 */
+/* Help & Tips -- Section 6 */
+/* You're all set -- Section 7 */
+.Font-32-center {
+    font: 32px/normal WorkSans-Black;
+    padding: 0 25% 30px;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--white);
+}
+
+/* Lorem ipsum dolor sit amet.. -- Section 4 */
+/* These cases are perfectly.. -- Section 5 */
+/* The wise man therefore.. -- Section 7 */
+.Font-18-center {
+    font: 18px/1.5 WorkSans;
+    padding: 0 25% 100px;
+    letter-spacing: -0.64px;
+    text-align: center;
+    color: var(--white);
+}
+
+/* Help & Tips (title) -- Section 6 */
+/* wknd -- FOOTER */
+.Font-16-white {
+    font: 16px/normal WorkSans-Bold;
+    letter-spacing: -0.57px;
+    color: var(--white);
+}
+
+/* Fellas -- HEADER */
+.Font-16-black {
+    font: 16px/normal WorkSans-Bold;
+    color: var(--black);
+}
+
+/* @2020 -- FOOTER */
+.Font-16-r {
+    font: 16px/normal WorkSans;
+    color: var(--white);
+}
+
+/* Good Morning -- HEADER */
+/* Testimonials (testimony) -- Section 3 */
+.Font-12 {
+    font: 12px/normal WorkSans;
+    letter-spacing: -0.43px;
+    color: var(--black);
+}
+
+/* Testimonials (by) -- Section 3 */
+.Font-32 {
+    font: 32px/normal WorkSans-Black;
+    letter-spacing: normal;
+    color: var(--black);
+}
+
+/* ===END FONT=== */
+
+/* ===RESPONSIVE=== */
+@media screen and (max-width: 480px) {
+    .Font-62-center {
+        font: 52px/51px WorkSans-Black;
+    }
+
+    .Font-21-center {
+        font: 16px/normal WorkSans-SemiBoldItalic;
+    }
+
+    .Font-32-center {
+        text-align: left !important;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .Font-21-right-black {
+        font: 16px/24px WorkSans-Medium;
+        letter-spacing: -0.57px;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .Font-21-right-white {
+        font: 16px/normal WorkSans-SemiBoldItalic;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .Font-18-center {
+        text-align: left !important;
+        font: 16px/24px WorkSans;
+        letter-spacing: -0.57px;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .card-img-overlay .col {
+        padding-right: 0%;
+        padding-left: 0%;
+    }
+
+    img .help-img {
+        padding-right: 0%;
+    }
+
+    .row-carousel {
+        /* display: block; */
+        margin-left: -20%;
+        margin-right: -100%;
+    }
+}
+
+/* ===END RESPONSIVE=== */
+
+#button {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    width: 231px;
+    height: 58px;
+    border-radius: 29px;
+    box-shadow: 0 20px 30px 0 var(--pinky-50);
+    background-color: var(--white);
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+#button1 {
+    width: 129px;
+    height: 24px;
+    border-radius: 12px;
+    background-color: var(--white);
+    font: 14px/normal WorkSans-Light;
+    padding: 3px 10px 5px;
+    border: solid 1px var(--white);
+}
+
+.container-footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--rich-blue);
+    padding: 0.8% 10%;
+}
+
+/* Help & Tips - Card */
+.center-pad {
+    padding: 0 15%;
+}
+
+.card-img {
+    width: 311px;
+    height: 176px;
+}
+
+.help-title {
+    padding: auto;
+    opacity: 0.5;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.001) 55%, var(--black) 55%);
+}
+
+/* Carousel - Testimonials */
+.VueCarousel-slide {
+    height: 100%;
+    text-align: left;
+    margin: 0 auto;
+    align-items: center;
+    flex-basis: 0;
+}
+
+.card-testimonial {
+    margin: 0 10px;
+    height: 140px;
+    width: 274px;
+}
+
+.row-carousel {
+    padding: 0 25%;
+    overflow: hidden;
+}
+
+/* back to top */
+.to-top {
+    background: white;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #1f1f1f;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+}
+
+.to-top.active {
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}

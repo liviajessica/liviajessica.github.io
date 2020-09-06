@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ===CSS=== -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
+    <!-- ===END CSS=== -->
+
+    <title>Take Home - Livia Jessica</title>
+</head>
+
+<body>
+    <!-- ===HEADER=== -->
+    <header class="navbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-5">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/css/images/bitmap_2.png" alt="">
+                    </a>
+                </div>
+                <div class="col-xs-7">
+                    <div class="row">
+                        <div class="col text-left Font-12">
+                            Good Morning
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-left Font-16-black">
+                            Fellas
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ===END HEADER=== -->
+
+
+    <!-- ===MAIN CONTENT=== -->
+    <main>
+        <!-- Section 1 -->
+        <section id="bg-wfh">
+            <div class="container-fluid" data-aos="fade-right">
+                <div class="row justify-content-center">
+                    <div class="col-sm-12">
+                        <h1 class="Font-62-center">
+                            <br> <br>
+                            WEEKEND FROM HOME
+                        </h1>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-sm-12">
+                        <p class="Font-21-center">
+                            Stay active with a little workout.
+                        </p>
+                        <br>
+                    </div>
+                </div>
+                <div class="row Font-16-center">
+                    <div class="col-sm-12">
+                        <img src="assets/css/images/bitmap.png" alt="">
+                        <button type="button" id="button" class="btn btn-light">Let's Go</button>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2 -->
+        <section id="bg-deffinition">
+            <div class="container-fluid" data-aos="fade-down-left">
+                <div class="row justify-content-center">
+                    <div class="col-sm-12">
+                        <p class="Font-21-right-black">
+                            <span class="text-style-1">Deffinition;</span>
+                            a practice or exercise to test or improve one's fitness for athletic
+                            competition, ability, or performance to exhaust (something, such as a mine) by working to
+                            devise, arrange, or achieve by resolving difficulties. Merriam-Webster.com Dictionary.
+                        </p>
+                        <p class="Font-21-right-white">
+                            -weekend team
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3 -->
+        <section id="bg-testimonials">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-sm-12">
+                        <h2 class="Font-32-center">
+                            Testimonials
+                        </h2>
+                    </div>
+                </div>
+                <div class="row-carousel" :class="['imageSliderContainer', itemsPerPageCssStyle]">
+                    <div class="wrapper" id="testimonials-api">
+                        <div class="carousel-view">
+                            <carousel :per-page="2.5" :navigation-enabled="true" :min-swipe-distance="1">
+                                <slide v-for="testimony in info" :key="testimony.id">
+                                    <div class="card card-testimonial">
+                                        <div class="card-header Font-32">{{ testimony.by }}</div>
+                                        <div class="card-body">
+                                            <p class="Font-12">{{ testimony.testimony }}</p>
+                                        </div>
+                                    </div>
+                                </slide>
+                            </carousel>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4 -->
+        <section id="bg-black">
+            <div class="container-fluid" data-aos="fade-up" data-aos-anchor-placement="top-center">
+                <div class="row justify-content-center">
+                    <div class="col-sm-12">
+                        <h2 class="Font-32-center">
+                            <br> <br> <br>
+                            POV
+                        </h2>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-sm-12">
+                        <p class="Font-18-center">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ullamco laboris nisi ea
+                            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                            dolore eu fugiat nulla pariatur.
+                        </p>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5 -->
+        <section id="bg-black">
+            <div class="container-fluid" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <div class="row justify-content-center">
+                    <div class="col-sm-12">
+                        <h2 class="Font-32-center">
+                            Resource
+                        </h2>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-sm-12">
+                        <h5 class="Font-18-center">
+                            These cases are perfectly simple and easy to distinguish. In a free hour, when our power of
+                            choice is untrammelled and when nothing prevents our being able to do what we like best
+                        </h5>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6 -->
+        <section id="bg-help-tips">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-sm-12">
+                        <h2 class="Font-32-center">
+                            Help & Tips
+                        </h2>
+                    </div>
+                </div>
+                <div class="row center-pad" id="help-api">
+                    <div v-for="help in info" class="col-sm-4">
+                        <div class="card bg-dark text-white">
+                            <img class="card-img" v-bind:src="help.image" alt="Card image">
+                            <div class="card-img-overlay d-flex align-items-end justify-content-end help-title">
+                                <div class="col Font-16-white">{{ help.title }}</div>
+                                <div class="col col-sm-2">
+                                    <img class="help-img" src="assets/css/images/oval-icon.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </div>
+            <br> <br>
+        </section>
+
+        <!-- Section 7 -->
+        <section id="bg-you-set">
+            <div class="container-fluid" data-aos="flip-left" data-aos-easing="ease-out-cubic">
+                <div class="row justify-content-center">
+                    <div class="col-sm-12">
+                        <h2 class="Font-32-center">
+                            You're all set
+                        </h2>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-sm-12">
+                        <h5 class="Font-18-center">
+                            The wise man therefore always holds in these matters to this principle of selection.
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- ===END MAIN CONTENT=== -->
+
+
+    <!-- ===FOOTER=== -->
+    <footer>
+        <div class="container-footer">
+            <div class="float-left">
+                <p class="Font-16-r">
+                    <span class="Font-16-white">wknd</span>
+                    @2020
+                </p>
+            </div>
+            <div class="float-right">
+                <button type="button" id="button1" class="btn btn-light">alpha version 0.1</button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===END FOOTER=== -->
+
+    <a href="#" class="to-top bg-black">
+        <i class="fas fa-long-arrow-alt-up"></i>
+    </a>
+
+    <!-- ===SCRIPT=== -->
+    <script src="https://use.fontawesome.com/09dae38036.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+
+    <!-- slider -->
+    <script src="https://ssense.github.io/vue-carousel/js/vue-carousel.min.js"></script>
+
+    <!-- vue & axios -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <!-- animated on scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="assets/js/app.js"></script>
+    <!-- ===END SCRIPT=== -->
+</body>
+
+</html>
