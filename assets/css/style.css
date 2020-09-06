@@ -73,7 +73,7 @@ html {
 }
 
 #bg-you-set {
-    background: url("images/Group-3.png") no-repeat left bottom, var(--black) repeat right top/auto;
+    background: url("images/group-3.png") no-repeat left bottom, var(--black) repeat right top/auto;
     padding-bottom: 100px;
 }
 
