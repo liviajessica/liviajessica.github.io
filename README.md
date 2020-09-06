@@ -3,12 +3,12 @@
 
 Take Home Challenge - Responsive Website
 
-Built with :
-CSS Framework - Bootstrap
-Javascript Framework - Vue.js
-Font Awesome
-AOS (Animate On Scroll)
-Vue Carousel
-Axios
-jQuery
-Basic HTML, CSS, and JS
+Built with : <br>
+CSS Framework - Bootstrap <br>
+Javascript Framework - Vue.js <br>
+Font Awesome <br>
+AOS (Animate On Scroll) <br>
+Vue Carousel <br>
+Axios <br>
+jQuery <br> 
+Basic HTML, CSS, and JS <br>
